@@ -3,15 +3,15 @@ import {withRouter} from  'react-router-dom';
 
 import './menu-item.style.scss';
 
-const MenuItem = ({title, imageUrl, size, linkUrl, match}) =>(
-    // eslint-disable-next-line no-restricted-globals
+const MenuItem = ({title, imageUrl, size, linkUrl, match, history}) =>(
+    
     <div   className= {`${size} menu-item`} onClick={() => history.push(`${match.url}${linkUrl}`)}>
         <div className ='background-image'
             style={{
             backgroundImage: `url(${imageUrl})`
             }} />
         
-    
+
             
 
     
